@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Judges Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="https://www.alphalake.ai"><img src="images/logo.png" alt="Logo" /></a>
+      <img src="images/icon.png" alt="Icon" />
+    </div>
+    
+    <div class="container">
+      <div class="round-1"></div>
+      <div class="round-2"></div>
+      <div class="round-box">
+        <span class="r1"></span>
+        <span class="r2"></span>
+        <span class="r3"></span>
+        <span class="r4"></span>
+        <span class="r5"></span>
+        <span class="r6"></span>
+        <span class="r7"></span>
+      </div>
+      <div class="round-box-right">
+        <span class="r1"></span>
+        <span class="r2"></span>
+        <span class="r3"></span>
+        <span class="r4"></span>
+        <span class="r5"></span>
+        <span class="r6"></span>
+        <span class="r7"></span>
+        <span class="r8"></span>
+      </div>
+      <h1>Enter your Judge code:</h1>
+      <div class="userInput">
+        <input
+          type="text"
+          id="ist"
+          maxlength="1"
+          onkeyup="clickEvent(this,'sec')"
+        />
+        <input
+          type="text"
+          id="sec"
+          maxlength="1"
+          onkeyup="clickEvent(this,'third')"
+        />
+        <input
+          type="text"
+          id="third"
+          maxlength="1"
+          onkeyup="clickEvent(this,'fourth')"
+        />
+        <input
+          type="text"
+          id="fourth"
+          maxlength="1"
+          onkeyup="clickEvent(this,'fifth')"
+        />
+        <input type="text" id="fifth" maxlength="1" />
+      </div>
+      <button><a href="home.html">Continue</a></button>
+    </div>
+
+    <script>
+      function clickEvent(first, last) {
+        if (first.value.length) {
+          document.getElementById(last).focus();
+        }
+      }
+    </script>
+  </body>
+</html>
